@@ -12,7 +12,14 @@
         "ms-python.python",
         "ms-toolsai.jupyter"
       ]
+    },
+    "build": {
+    "args": {
+      "USER_UID": "${localEnv:UID}",
+      "USER_GID": "${localEnv:GID}"
     }
+  }
   },
+  
   "forwardPorts": [8888]
 }
